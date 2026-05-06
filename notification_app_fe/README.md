@@ -1,198 +1,36 @@
-# Notification Dashboard Frontend
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern and responsive Notification Dashboard built using **Next.js App Router**, **React**, and **Material UI** for the AffordMed Frontend Assessment.
+## Getting Started
 
----
-
-# Features
-
-- View notifications dynamically from API
-- Filter notifications by:
-  - All
-  - Placement
-  - Result
-  - Event
-- Responsive UI for desktop and mobile
-- Real-time API integration
-- Logging middleware integration
-- Server-side API proxy using Next.js App Router
-- CORS-safe architecture
-- Error handling and loading states
-- Clean and modern dashboard design
-
----
-
-# Tech Stack
-
-- Next.js 16
-- React
-- Material UI (MUI)
-- Axios
-- JavaScript / TypeScript
-- Next.js App Router API Routes
-
----
-
-# Project Structure
-
-```bash
-notification_app_fe/
-│
-├── app/
-│   ├── api/
-│   │   ├── notifications/
-│   │   └── logs/
-│   ├── page.tsx
-│   └── layout.tsx
-│
-├── components/
-│   ├── Navbar.js
-│   ├── NotificationCard.js
-│   ├── FilterBar.js
-│   ├── Loader.js
-│   ├── ErrorState.js
-│   └── PaginationControls.js
-│
-├── services/
-│   └── api.js
-│
-├── utils/
-│   ├── logger.js
-│   └── prioritySort.js
-│
-├── screenshots/
-│
-└── README.md
-```
-
----
-
-# API Architecture
-
-Frontend never directly calls external APIs.
-
-Instead:
-
-```txt
-Browser → Next.js API Routes → External API
-```
-
-This architecture:
-
-- Prevents CORS issues
-- Keeps tokens secure
-- Makes the application production-ready
-
----
-
-# Logging Middleware
-
-Implemented custom reusable logging middleware with:
-
-- stack validation
-- level validation
-- package validation
-- API logging support
-
-Supported levels:
-
-- debug
-- info
-- warn
-- error
-- fatal
-
----
-
-# Responsive Design
-
-The application is fully responsive and supports:
-
-- Desktop View
-- Tablet View
-- Mobile View
-
----
-
-# Screenshots
-
-## Dashboard
-
-![Dashboard](./screenshots/Screenshot%202026-05-06%20155901.png)
-
----
-
-## Placement Notifications
-
-![Placement](./screenshots/Screenshot%202026-05-06%20160014.png)
-
----
-
-## Result Notifications
-
-![Result](./screenshots/Screenshot%202026-05-06%20160024.png)
-
----
-
-## Event Notifications
-
-![Event](./screenshots/Screenshot%202026-05-06%20160041.png)
-
----
-
-## Mobile Responsive View
-
-![Mobile](./screenshots/Screenshot%202026-05-06%20160033.png)
-
----
-
-# Installation
-
-Clone repository:
-
-```bash
-git clone <your-github-repo-link>
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run development server:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```txt
-http://localhost:3000
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-# Environment Variables
+## Learn More
 
-Create:
+To learn more about Next.js, take a look at the following resources:
 
-```txt
-.env.local
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Add:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```env
-NEXT_PUBLIC_API_BASE_URL=http://20.207.122.201/evaluation-service
-NEXT_PUBLIC_AUTH_TOKEN=YOUR_TOKEN
-```
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-# Author
-
-### Sravya Missula
-
-Frontend Assessment Submission — AffordMed
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
