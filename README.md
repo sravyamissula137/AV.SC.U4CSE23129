@@ -114,38 +114,6 @@ The application is fully responsive and supports:
 
 ---
 
-# Screenshots
-
-## Dashboard
-
-![Dashboard](./screenshots/Screenshot%202026-05-06%20155901.png)
-
----
-
-## Placement Notifications
-
-![Placement](./screenshots/Screenshot%202026-05-06%20160014.png)
-
----
-
-## Result Notifications
-
-![Result](./screenshots/Screenshot%202026-05-06%20160024.png)
-
----
-
-## Event Notifications
-
-![Event](./screenshots/Screenshot%202026-05-06%20160041.png)
-
----
-
-## Mobile Responsive View
-
-![Mobile](./screenshots/Screenshot%202026-05-06%20160033.png)
-
----
-
 # Installation
 
 Clone repository:
